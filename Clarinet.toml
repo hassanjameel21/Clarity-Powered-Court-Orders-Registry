@@ -1,0 +1,43 @@
+[project]
+name = 'Clarity-Powered-Court-Orders-Registry'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.Clarity-Powered-Court-Orders-Registry]
+path = 'contracts/Clarity-Powered-Court-Orders-Registry.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.court-notifications]
+path = 'contracts/court-notifications.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.evidence-registry]
+path = 'contracts/evidence-registry.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.appeal-system]
+path = 'contracts/appeal-system.clar'
+clarity_version = 3
+epoch = 3.1
+
+[contracts.amendment-system]
+path = "contracts/amendment-system.clar"
+clarity_version = 2
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
+
+[repl.remote_data]
+enabled = false
+api_url = 'https://api.hiro.so'
